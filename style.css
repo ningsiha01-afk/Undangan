@@ -1,0 +1,117 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:serif;
+}
+
+body{
+background:#fff;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+background:#00000070;
+padding:15px;
+z-index:10;
+}
+
+.navbar ul{
+display:flex;
+justify-content:center;
+gap:30px;
+list-style:none;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+
+/* NAVBAR ICON BAWAH */
+
+.nav-icon{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:white;
+display:flex;
+justify-content:space-around;
+padding:12px 5px;
+box-shadow:0 -2px 10px rgba(0,0,0,0.15);
+z-index:999;
+}
+
+.nav-icon a{
+color:#444;
+font-size:18px;
+text-decoration:none;
+}
+
+.nav-icon a:hover{
+color:#c59b6d;
+}
+
+
+
+/* COVER */
+
+.cover{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+.cover video{
+width:100%;
+height:100vh;
+object-fit:cover;
+}
+
+/* TEKS AKHIR VIDEO */
+
+.overlay{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:white;
+opacity:0;
+visibility: hidden;
+transition:1s;
+z-index: 99; 
+pointer-events: none;
+}
+
+.overlay h1{
+font-size:40px;
+margin:10px 0;
+}
+
+.scroll{
+display:block;
+margin-top:20px;
+font-size:14px;
+animation:gerak 1.5s infinite;
+}
+
+@keyframes gerak{
+0%{transform:translateY(0)}
+50%{transform:translateY(10px)}
+100%{transform:translateY(0)}
+}
+
+/* CONTENT */
+
+.content{
+padding:100px 20px;
+text-align:center;
+}
